@@ -24,7 +24,7 @@ export default function NFTComponent({ nft }: Props) {
 
   const { data: directListing, isLoading: loadingDirectListing } =
     useValidDirectListings(marketplace, {
-      tokenContract: NFT_COLLECTION_ADDRESS,
+      //tokenContract: NFT_COLLECTION_ADDRESS,
       tokenId: nft.metadata.id,
     });
 
