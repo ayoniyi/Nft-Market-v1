@@ -20,3 +20,24 @@ body {
   color: #e7e8e8;
   background: #070707;
 }
+
+.smContainer {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .mainContainer {
+    display: none;
+  }
+  .smContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .smContainer p {
+    text-align: center;
+    font-size: 1.5em;
+    color: #84309c;
+  }
+}

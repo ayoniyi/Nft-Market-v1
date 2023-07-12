@@ -11,12 +11,22 @@ const activeChain = "mumbai";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThirdwebProvider activeChain={activeChain}>
-      <ChakraProvider>
-        <Navbar />
-        <Component {...pageProps} />
-      </ChakraProvider>
-    </ThirdwebProvider>
+    <>
+      <div className="smContainer">
+        <p>
+          Sorry you can't view app on this device, please switch to a larger
+          device.
+        </p>
+      </div>
+      <div className="mainContainer">
+        <ThirdwebProvider activeChain={activeChain}>
+          <ChakraProvider>
+            <Navbar />
+            <Component {...pageProps} />
+          </ChakraProvider>
+        </ThirdwebProvider>
+      </div>
+    </>
   );
 }
 
