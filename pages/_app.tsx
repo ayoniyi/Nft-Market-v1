@@ -14,8 +14,8 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <div className="smContainer">
         <p>
-          Sorry you can't view app on this device, please switch to a larger
-          device.
+          Sorry you can&apos;t view app on this device, please switch to a
+          larger device.
         </p>
       </div>
       <div className="mainContainer">
