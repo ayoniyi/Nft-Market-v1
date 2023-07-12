@@ -108,8 +108,13 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
             <Skeleton isLoaded={!loadingMarketplace && !loadingDirectListing}>
               <ThirdwebNftMedia
                 metadata={nft.metadata}
-                width="100%"
-                height="100%"
+                // width="90%"
+                // height="10%"
+                style={{
+                  width: "100%",
+                  height: "700px",
+                  borderRadius: "15px",
+                }}
               />
             </Skeleton>
           </Box>
@@ -131,9 +136,9 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
                     p={"8px"}
                     borderRadius={"4px"}
                   >
-                    <Text fontSize={"small"}>{value.trait_type}</Text>
+                    <Text fontSize={"small"}>{value?.trait_type}</Text>
                     <Text fontSize={"small"} fontWeight={"bold"}>
-                      {value.value}
+                      {value?.value}
                     </Text>
                   </Flex>
                 )
